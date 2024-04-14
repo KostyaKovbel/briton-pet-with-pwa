@@ -1,0 +1,81 @@
+.inputWrapper {
+  position: relative;
+  width: 200px;
+  z-index: 3;
+}
+
+.inputWrapper input {
+  width: 100%;
+  border: 1px solid black;
+  border-width: 1px;
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+.inputWrapper input.opened {
+  border-radius: 8px 8px 0 0;
+}
+
+.inputWrapper label {
+  z-index: -1;
+  border: 1px solid transparent;
+  top: 4px;
+  left: 12px;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.list {
+  max-height: 80vh;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: max-content;
+
+  background-color: white;
+  border: 1px solid black;
+  border-top: none;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  overflow: scroll;
+}
+
+.list li:not(:last-child) {
+  width: 100%;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: center;
+
+  border-bottom: 1px solid black;
+}
+
+.list li:last-child {
+  width: 100%;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.selectable {
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.selectable:hover {
+  background-color: #bde1e8;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+
+  pointer-events: none;
+  transition: 0.2s;
+  backdrop-filter: blur(2px);
+}
