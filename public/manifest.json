@@ -1,7 +1,7 @@
 {
   "name": "Briton-qr",
   "short_name": "Briton-qr",
-  "theme_color": "#FFFFFF",
+  "theme_color": "#bde1e8",
   "background_color": "#FFFFFF",
   "start_url": "/",
   "display": "standalone",
